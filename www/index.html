@@ -41,6 +41,15 @@
             var number = window.localStorage.getItem("number1");
             alert(number);
             window.localStorage.length; 
+            
+            function Details(firstName, secondName, yearOfBirth)
+            {   this.firstName = firstName;
+                this.secondName = secondName;
+                this.yearOfBirth = yearOfBirth;
+            }
+            var details = new details('Tom','Smith','1994')
+            window.localstorage.setItem("Details", JSON.Stringify(details));
+            var retrieved_book = JSON.parse(window.localStoarage.getItem('details'))
         </script>
     </body>
 </html>
