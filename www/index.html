@@ -42,14 +42,20 @@
             alert(number);
             window.localStorage.length; 
             
-            function Details(firstName, secondName, yearOfBirth)
-            {   this.firstName = firstName;
-                this.secondName = secondName;
-                this.yearOfBirth = yearOfBirth;
+            function MarsBar(energyKJ, energyKCal, protein, carbohydrates, ofWhichSugars, fat, ofWhichSaturates, fibre, sodium)
+            {   this.enregyKJ = energyKJ;
+                this.energyKCal = energyKCal;
+                this.protien = protein;
+                this.carbohydrates = carbohydrates;
+                this.ofWhichSugars = ofWhichsugars;
+                this.fat = fat;
+                this.ofWhichSaturates = ofWhichSaturates;
+                this.fibre = fibre;
+                this.sodium = sodium;
             }
-            var details = new details('Tom','Smith','1994')
-            window.localstorage.setItem("Details", JSON.Stringify(details));
-            var retrieved_book = JSON.parse(window.localStoarage.getItem('details'))
+            var marsBar = new marsBar('1888','449','4.3','68.9','59.7','17.1','8.3','1.2','0.16')
+            window.localstorage.setItem("MarsBar", JSON.Stringify(details));
+            var retrieved_marsBar = JSON.parse(window.localStoarage.getItem('marsBar'))
         </script>
     </body>
 </html>
