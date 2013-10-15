@@ -39,8 +39,8 @@
             app.initialize();
             window.localStorage.setItem("number1","10");
             var number = window.localStorage.getItem("number1");
-            alert(number);
-            window.localStorage.length; 
+            var stLength = window.localStorage.length; 
+            alert(number + stLength);
             
             function MarsBar(energyKJ, energyKCal, protein, carbohydrates, ofWhichSugars, fat, ofWhichSaturates, fibre, sodium)
             {   this.enregyKJ = energyKJ;
