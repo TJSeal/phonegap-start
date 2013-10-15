@@ -40,7 +40,7 @@
             window.localStorage.setItem("number1","10");
             var number = window.localStorage.getItem("number1");
             var stLength = window.localStorage.length; 
-            alert(number + stLength);
+            alert(number);
             
             function MarsBar(energyKJ, energyKCal, protein, carbohydrates, ofWhichSugars, fat, ofWhichSaturates, fibre, sodium)
             {   this.enregyKJ = energyKJ;
@@ -56,6 +56,7 @@
             var marsBar = new marsBar('1888','449','4.3','68.9','59.7','17.1','8.3','1.2','0.16')
             window.localstorage.setItem("MarsBar", JSON.Stringify(details));
             var retrieved_marsBar = JSON.parse(window.localStoarage.getItem('marsBar'))
+            alert(marsBar);
         </script>
     </body>
 </html>
